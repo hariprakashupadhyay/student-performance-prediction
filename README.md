@@ -23,7 +23,7 @@ This project demonstrates an end-to-end beginner-level machine learning workflow
 The dataset contains 20 student records and the following features:
 
 | Feature | Description |
-|---|---|
+|---|
 | `Study_Hours` | Student's study hours |
 | `Attendance` | Attendance percentage |
 | `Previous_Marks` | Previous academic marks |
@@ -100,8 +100,10 @@ The application accepts student information and returns a predicted final score.
 ```text
 student-performance-prediction/
 │
+├── README.md
 ├── Student_Performance_Prediction.ipynb
 ├── app.py
 ├── requirements.txt
 ├── student_performance.csv
 └── student_score_model.pkl
+```
