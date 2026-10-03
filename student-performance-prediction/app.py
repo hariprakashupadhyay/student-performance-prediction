@@ -1,9 +1,10 @@
-
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-model = joblib.load("student_score_model.pkl")
+BASE_DIR = Path(__file__).resolve().parent
+model = joblib.load(BASE_DIR / "student_score_model.pkl")
 
 st.title("🎓 Student Performance Predictor")
 st.write("Predict a student's final score using a machine learning model.")
